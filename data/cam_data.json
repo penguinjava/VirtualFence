@@ -1,0 +1,66 @@
+[
+  {
+    "cam_id": "0001",
+    "cam_name": "cam01",
+    "safe_level": 3,
+    "recording": true,
+    "area": [
+      {
+        "area_active": true,
+        "area_edit": false,
+        "area_number": 1,
+        "primary_detection": 367,
+        "secondary_detection": 1288
+      }
+    ],
+    "image_path": "CAM01_img.png"
+  },
+  {
+    "cam_id": "0002",
+    "cam_name": "cam02",
+    "safe_level": 2,
+    "recording": true,
+    "area": [
+      {
+        "area_active": false,
+        "area_edit": false,
+        "area_number": 1,
+        "primary_detection": 748,
+        "secondary_detection": 947
+      }
+    ],
+    "image_path": "CAM02_img.png"
+  },
+  {
+    "cam_id": "0003",
+    "cam_name": "cam03",
+    "safe_level": 1,
+    "recording": false,
+    "area": [
+      {
+        "area_active": true,
+        "area_edit": false,
+        "area_number": 1,
+        "primary_detection": 211,
+        "secondary_detection": 1421
+      }
+    ],
+    "image_path": "CAM03_img.png"
+  },
+  {
+    "cam_id": "0004",
+    "cam_name": "cam04",
+    "safe_level": 3,
+    "recording": true,
+        "area": [
+      {
+        "area_active": true,
+        "area_edit": false,
+        "area_number": 1,
+        "primary_detection": 582,
+        "secondary_detection": 816
+      }
+    ],
+    "image_path": "CAM04_img.png"
+  }
+]

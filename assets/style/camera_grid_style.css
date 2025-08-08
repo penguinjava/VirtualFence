@@ -1,0 +1,69 @@
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.camera-header {
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.camera-id {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.camera-name {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #333;
+}
+
+.safety-status {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.safety-status.safe { color: #33ff33; }
+.safety-status.warning { color: #ffa500; }
+.safety-status.danger { color: #ff5555; }
+
+.detection-stats {
+    display: flex;
+    gap: 16px;
+    color: white;
+    font-size: 14px;
+}
+
+.camera-view {
+    flex: 1;
+    min-height: 200px;
+    position: relative;
+}
+
+
+.camera-view img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 이미지 컨테이너 스타일링 */
+[data-testid="stImage"] {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}

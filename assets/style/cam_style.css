@@ -1,0 +1,163 @@
+
+.cam-box {
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Pretendard', sans-serif;
+    position: relative;
+}
+
+
+.cam-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.cam-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.cam-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.cam-row .primary {
+    color: gold;
+}
+
+.cam-row .secondary {
+    color: #ff5555;
+}
+
+.safety-status {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 0;
+    margin: 8px 0;
+}
+
+.safety-status.safe {
+    color: #33ff33;
+}
+
+.safety-status.warning {
+    color: #ffa500;
+}
+
+.safety-status.danger {
+    color: #ff5555;
+}
+
+/* Streamlit 요소들의 스타일링 */
+.cam-box .stButton button {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #888;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.cam-box .stButton button:hover {
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 카메라 그리드 레이아웃 */
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.camera-cell {
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+}
+
+/* 카메라 그리드 레이아웃 */
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.camera-cell {
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.camera-header {
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.camera-id {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.camera-name {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.camera-view {
+    flex-grow: 1;
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.camera-view img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.detection-stats {
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.camera-cell .safety-status {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cam-section-box {
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 12px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
