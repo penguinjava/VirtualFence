@@ -136,7 +136,15 @@ def render_sidebar(data):
                         col_del, col_refresh = st.columns(2)
                         with col_del:
                             if st.button("🗑️ 삭제", key=f"delete_area_{area_key}"):
+                                # ✅ 영역 데이터 삭제
                                 st.session_state[f"area_list_{cam_id}"].pop(idx)
+
+                                # ✅ 이 영역의 최종 저장 객체/초기화 상태도 함께 제거
+                                saved_key = f"vf_saved_{area_key}"
+                                init_key = f"vf_init_{cam_id}_{area_key}"
+                                st.session_state.pop(saved_key, None)
+                                st.session_state.pop(init_key, None)
+
                                 st.experimental_rerun()
                         with col_refresh:
                             if st.button("🔄 새로고침", key=f"refresh_area_{area_key}"):
