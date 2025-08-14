@@ -229,8 +229,8 @@ def render_sidebar(data):
                                 st.session_state.pop(f"vf_csv_loaded_{cam_id}_{area_key}", None)
                                 st.experimental_rerun()
 
-            # 영역 추가
-            if len(area_list) < 2:
+            # 영역 추가 (최대 3개로 상향)
+            if len(area_list) < 3:
                 if st.button('+ 영역 추가 하기', key=f"add_area_{cam_id}", use_container_width=True):
                     new_area = {
                         "area_active": False,
@@ -243,6 +243,6 @@ def render_sidebar(data):
                     _persist_cam_data(data)
                     st.experimental_rerun()
             else:
-                st.button('+ 영역 추가 하기 (최대 2개)', key=f"add_area_disabled_{cam_id}", use_container_width=True, disabled=True)
+                st.button('+ 영역 추가 하기 (최대 3개)', key=f"add_area_disabled_{cam_id}", use_container_width=True, disabled=True)
 
         st.markdown("</div>", unsafe_allow_html=True)

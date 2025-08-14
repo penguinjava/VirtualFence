@@ -1,0 +1,8 @@
+[client]
+showSidebarNavigation = false
+
+[server]
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
