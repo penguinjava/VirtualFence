@@ -104,6 +104,9 @@ def render_sidebar(data):
                 )
                 if area_active != st.session_state[f"area_state_{area_key}"]:
                     st.session_state[f"area_state_{area_key}"] = area_active
+                    # ⬇️ 토글 전환 시 CSV 자동로드 플래그 초기화(다음에 ON되면 다시 로드)
+                    loaded_flagkey = f"vf_csv_loaded_{cam_id}_{area_key}"
+                    st.session_state.pop(loaded_flagkey, None)
                     st.experimental_rerun()
 
                 st.markdown(f"""

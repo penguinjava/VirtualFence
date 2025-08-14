@@ -3,6 +3,7 @@ import json
 import os
 from components.sidebar import render_sidebar
 from components.camera_grid import render_camera_grid
+
 from streamlit_drawable_canvas import st_canvas
 from PIL import Image
 
