@@ -176,6 +176,19 @@ def save_fence_csv(cam_id, area_key, disp_w, disp_h):
     path = _csv_path(cam_id, area_key)
     df.to_csv(path, index=False)
 
+
+def delete_fence_csv(cam_id: str, area_key: str) -> bool:
+    """해당 영역의 가상펜스 CSV를 삭제합니다."""
+    try:
+        path = _csv_path(cam_id, area_key)
+        if os.path.exists(path):
+            os.remove(path)
+            return True
+    except Exception:
+        pass
+    return False
+
+
 def load_fence_csv(cam_id, area_key):
     path = _csv_path(cam_id, area_key)
     if not os.path.exists(path):

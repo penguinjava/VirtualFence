@@ -220,7 +220,7 @@ def render_camera_card(cam, full_width=False):
                 area_active = st.session_state.get(f"area_state_{area_key}", False)
                 st.markdown(f"""
                     <div class="info-row">
-                        <b>영역 {area_number}</b> | {"✅ 표시중(ON)" if area_active else "⛔ 숨김(OFF)"} |
+                        <b>영역 {area_number}</b> | {"표시중" if area_active else "숨김"} |
                         <span class="safety-status {'safe' if cam['safe_level']==1 else 'warning' if cam['safe_level']==2 else 'danger'}">
                             {"안전합니다" if cam['safe_level']==1 else "작업자 진입 확인" if cam['safe_level']==2 else "작업자 위험반경 진입"}
                         </span> |
