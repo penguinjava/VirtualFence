@@ -11,6 +11,20 @@
         "primary_detection": 0,
         "secondary_detection": 0,
         "area_edit": false
+      },
+      {
+        "area_active": true,
+        "area_number": 2,
+        "primary_detection": 0,
+        "secondary_detection": 0,
+        "area_edit": false
+      },
+      {
+        "area_active": true,
+        "area_number": 3,
+        "primary_detection": 0,
+        "secondary_detection": 0,
+        "area_edit": false
       }
     ],
     "image_path": "D:\\ejhdevworks\\devworks\\Virtual_Fence\\assets\\images\\CAM01_img.png",
