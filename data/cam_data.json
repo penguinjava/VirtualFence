@@ -1,0 +1,68 @@
+[
+  {
+    "cam_id": "0001",
+    "cam_name": "cam01",
+    "safe_level": 3,
+    "recording": true,
+    "area": [
+      {
+        "area_active": true,
+        "area_number": 1,
+        "primary_detection": 0,
+        "secondary_detection": 0,
+        "area_edit": false
+      }
+    ],
+    "image_path": "D:\\ejhdevworks\\devworks\\Virtual_Fence\\assets\\images\\CAM01_img.png",
+    "video_path": "./assets/videos/CAM01.mp4"
+  },
+  {
+    "cam_id": "0002",
+    "cam_name": "cam02",
+    "safe_level": 2,
+    "recording": true,
+    "area": [
+      {
+        "area_active": true,
+        "area_edit": false,
+        "area_number": 1,
+        "primary_detection": 748,
+        "secondary_detection": 947
+      }
+    ],
+    "image_path": "D:\\ejhdevworks\\devworks\\Virtual_Fence\\assets\\images\\CAM02_img.png",
+    "video_path": "./assets/videos/CAM02.mp4"
+  },
+  {
+    "cam_id": "0003",
+    "cam_name": "cam03",
+    "safe_level": 1,
+    "recording": true,
+    "area": [
+      {
+        "area_active": true,
+        "area_edit": false,
+        "area_number": 1,
+        "primary_detection": 211,
+        "secondary_detection": 1421
+      }
+    ],
+    "image_path": "D:\\ejhdevworks\\devworks\\Virtual_Fence\\assets\\images\\CAM03_img.png"
+  },
+  {
+    "cam_id": "0004",
+    "cam_name": "cam04",
+    "safe_level": 3,
+    "recording": true,
+    "area": [
+      {
+        "area_active": true,
+        "area_edit": false,
+        "area_number": 1,
+        "primary_detection": 582,
+        "secondary_detection": 816
+      }
+    ],
+    "image_path": "D:\\ejhdevworks\\devworks\\Virtual_Fence\\assets\\images\\CAM04_img.png"
+  }
+]
